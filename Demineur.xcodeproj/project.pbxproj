@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C0D2A4F15F101F800C8C68C /* SceneGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C0D2A4E15F101F800C8C68C /* SceneGraph.framework */; };
+		6C3F264615F0DF7A0024620B /* GameView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6C3F264515F0DF7A0024620B /* GameView.mm */; };
+		6C3F264C15F0FB670024620B /* mineswiper.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C3F264B15F0FB670024620B /* mineswiper.png */; };
+		6C4FCF8A15EF81A20067095B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4FCF8915EF81A20067095B /* Cocoa.framework */; };
+		6C4FCF9415EF81A20067095B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C4FCF9215EF81A20067095B /* InfoPlist.strings */; };
+		6C4FCF9615EF81A20067095B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4FCF9515EF81A20067095B /* main.m */; };
+		6C4FCF9A15EF81A20067095B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6C4FCF9815EF81A20067095B /* Credits.rtf */; };
+		6C4FCF9D15EF81A20067095B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4FCF9C15EF81A20067095B /* AppDelegate.m */; };
+		6C4FCFA015EF81A20067095B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C4FCF9E15EF81A20067095B /* MainMenu.xib */; };
+		6C7A98F015EF957800F2C0B8 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7A98EF15EF957800F2C0B8 /* OpenGLView.m */; };
+		6C7A98F315EF975600F2C0B8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7A98F215EF975600F2C0B8 /* OpenGL.framework */; };
+		6CF486FB15F11CEC00F2E49A /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF486F915F11CEC00F2E49A /* game.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C0D2A4E15F101F800C8C68C /* SceneGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneGraph.framework; path = Library/Frameworks/SceneGraph.framework; sourceTree = SDKROOT; };
+		6C3F264415F0DF7A0024620B /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		6C3F264515F0DF7A0024620B /* GameView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameView.mm; sourceTree = "<group>"; };
+		6C3F264B15F0FB670024620B /* mineswiper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mineswiper.png; sourceTree = SOURCE_ROOT; };
+		6C4FCF8515EF81A20067095B /* Demineur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demineur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4FCF8915EF81A20067095B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6C4FCF8C15EF81A20067095B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6C4FCF8D15EF81A20067095B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6C4FCF8E15EF81A20067095B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6C4FCF9115EF81A20067095B /* Demineur-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demineur-Info.plist"; sourceTree = "<group>"; };
+		6C4FCF9315EF81A20067095B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6C4FCF9515EF81A20067095B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C4FCF9715EF81A20067095B /* Demineur-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demineur-Prefix.pch"; sourceTree = "<group>"; };
+		6C4FCF9915EF81A20067095B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6C4FCF9B15EF81A20067095B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6C4FCF9C15EF81A20067095B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6C4FCF9F15EF81A20067095B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6C7A98EE15EF957800F2C0B8 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		6C7A98EF15EF957800F2C0B8 /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		6C7A98F215EF975600F2C0B8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		6CF486F915F11CEC00F2E49A /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		6CF486FA15F11CEC00F2E49A /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C4FCF8215EF81A20067095B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0D2A4F15F101F800C8C68C /* SceneGraph.framework in Frameworks */,
+				6C7A98F315EF975600F2C0B8 /* OpenGL.framework in Frameworks */,
+				6C4FCF8A15EF81A20067095B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C3F264315F0DF250024620B /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				6C7A98EE15EF957800F2C0B8 /* OpenGLView.h */,
+				6C7A98EF15EF957800F2C0B8 /* OpenGLView.m */,
+			);
+			name = Template;
+			sourceTree = "<group>";
+		};
+		6C4FCF7A15EF81A20067095B = {
+			isa = PBXGroup;
+			children = (
+				6C4FCF8F15EF81A20067095B /* Demineur */,
+				6C4FCF8815EF81A20067095B /* Frameworks */,
+				6C4FCF8615EF81A20067095B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C4FCF8615EF81A20067095B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C4FCF8515EF81A20067095B /* Demineur.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C4FCF8815EF81A20067095B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C0D2A4E15F101F800C8C68C /* SceneGraph.framework */,
+				6C7A98F215EF975600F2C0B8 /* OpenGL.framework */,
+				6C4FCF8915EF81A20067095B /* Cocoa.framework */,
+				6C4FCF8B15EF81A20067095B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C4FCF8B15EF81A20067095B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C4FCF8C15EF81A20067095B /* AppKit.framework */,
+				6C4FCF8D15EF81A20067095B /* CoreData.framework */,
+				6C4FCF8E15EF81A20067095B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6C4FCF8F15EF81A20067095B /* Demineur */ = {
+			isa = PBXGroup;
+			children = (
+				6C3F264315F0DF250024620B /* Template */,
+				6C3F264415F0DF7A0024620B /* GameView.h */,
+				6C3F264515F0DF7A0024620B /* GameView.mm */,
+				6CF486FA15F11CEC00F2E49A /* game.h */,
+				6CF486F915F11CEC00F2E49A /* game.cpp */,
+				6C4FCF9B15EF81A20067095B /* AppDelegate.h */,
+				6C4FCF9C15EF81A20067095B /* AppDelegate.m */,
+				6C4FCF9E15EF81A20067095B /* MainMenu.xib */,
+				6C4FCF9015EF81A20067095B /* Supporting Files */,
+			);
+			path = Demineur;
+			sourceTree = "<group>";
+		};
+		6C4FCF9015EF81A20067095B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C3F264B15F0FB670024620B /* mineswiper.png */,
+				6C4FCF9115EF81A20067095B /* Demineur-Info.plist */,
+				6C4FCF9215EF81A20067095B /* InfoPlist.strings */,
+				6C4FCF9515EF81A20067095B /* main.m */,
+				6C4FCF9715EF81A20067095B /* Demineur-Prefix.pch */,
+				6C4FCF9815EF81A20067095B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C4FCF8415EF81A20067095B /* Demineur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C4FCFA315EF81A20067095B /* Build configuration list for PBXNativeTarget "Demineur" */;
+			buildPhases = (
+				6C4FCF8115EF81A20067095B /* Sources */,
+				6C4FCF8215EF81A20067095B /* Frameworks */,
+				6C4FCF8315EF81A20067095B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demineur;
+			productName = Demineur;
+			productReference = 6C4FCF8515EF81A20067095B /* Demineur.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C4FCF7C15EF81A20067095B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 6C4FCF7F15EF81A20067095B /* Build configuration list for PBXProject "Demineur" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6C4FCF7A15EF81A20067095B;
+			productRefGroup = 6C4FCF8615EF81A20067095B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C4FCF8415EF81A20067095B /* Demineur */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C4FCF8315EF81A20067095B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4FCF9415EF81A20067095B /* InfoPlist.strings in Resources */,
+				6C4FCF9A15EF81A20067095B /* Credits.rtf in Resources */,
+				6C4FCFA015EF81A20067095B /* MainMenu.xib in Resources */,
+				6C3F264C15F0FB670024620B /* mineswiper.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C4FCF8115EF81A20067095B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4FCF9615EF81A20067095B /* main.m in Sources */,
+				6C4FCF9D15EF81A20067095B /* AppDelegate.m in Sources */,
+				6C7A98F015EF957800F2C0B8 /* OpenGLView.m in Sources */,
+				6C3F264615F0DF7A0024620B /* GameView.mm in Sources */,
+				6CF486FB15F11CEC00F2E49A /* game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C4FCF9215EF81A20067095B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C4FCF9315EF81A20067095B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6C4FCF9815EF81A20067095B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C4FCF9915EF81A20067095B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6C4FCF9E15EF81A20067095B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C4FCF9F15EF81A20067095B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C4FCFA115EF81A20067095B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6C4FCFA215EF81A20067095B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6C4FCFA415EF81A20067095B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demineur/Demineur-Prefix.pch";
+				INFOPLIST_FILE = "Demineur/Demineur-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6C4FCFA515EF81A20067095B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demineur/Demineur-Prefix.pch";
+				INFOPLIST_FILE = "Demineur/Demineur-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C4FCF7F15EF81A20067095B /* Build configuration list for PBXProject "Demineur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C4FCFA115EF81A20067095B /* Debug */,
+				6C4FCFA215EF81A20067095B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C4FCFA315EF81A20067095B /* Build configuration list for PBXNativeTarget "Demineur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C4FCFA415EF81A20067095B /* Debug */,
+				6C4FCFA515EF81A20067095B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C4FCF7C15EF81A20067095B /* Project object */;
+}
